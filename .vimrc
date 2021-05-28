@@ -1,6 +1,9 @@
 " Setting some decent VIM settings for programming
 " This source file comes from git-for-windows build-extra repository (git-extra/vimrc)
 
+
+set dir=c:\\tmp                 " Create a temp directory for swap files (Win32)
+
 ru! defaults.vim                " Use Enhanced Vim defaults
 set mouse=                      " Reset the mouse setting from defaults
 aug vimStartup | au! | aug END  " Revert last positioned jump, as it is defined below
