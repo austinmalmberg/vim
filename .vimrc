@@ -1,8 +1,12 @@
 " Setting some decent VIM settings for programming
 " This source file comes from git-for-windows build-extra repository (git-extra/vimrc)
 
+set backupdir=$HOME\\tmp        " Keep backups in temp directory
+set undodir=$HOME\\tmp          " Keep undo files in temp directory
+set directory=$HOME\\tmp        " Keep swap files in temp directory
 
-set dir=c:\\tmp                 " Create a temp directory for swap files (Win32)
+set breakindent                 " Soft wrapped lines will have the same indent as the line it started on
+set showbreak=____              " Lines that are soft wrapped will have ___ appended
 
 ru! defaults.vim                " Use Enhanced Vim defaults
 set mouse=                      " Reset the mouse setting from defaults
